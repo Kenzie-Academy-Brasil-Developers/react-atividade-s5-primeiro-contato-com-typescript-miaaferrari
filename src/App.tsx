@@ -30,7 +30,7 @@ function App() {
         <ul>
         {list.map((item, index) => (
           <li key={index}>
-          <Card age={newUser.age} hobby={newUser.hobby} name={newUser.name} />
+          <Card age={item.age} hobby={item.hobby} name={item.name} />
           </li>
           ))}
         </ul>

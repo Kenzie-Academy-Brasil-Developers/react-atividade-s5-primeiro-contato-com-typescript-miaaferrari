@@ -28,8 +28,8 @@ export const ListProvider = ({ children }: ProvidersProps) => {
     const [newUser, setNewUser] = useState<User>({} as User);
 
     const createNewUser = (user: User) => {
-        setNewUser(user);
         setList([...list, user]);
+        setNewUser(user);
         console.log(list)
     }
 
